@@ -387,7 +387,7 @@ section.show {
 
 .carrossel {
   height: 600px;
-  min-width: 370px;
+  min-width: 29%;
   z-index: 100;
   button {
     margin-top: 20px;
@@ -635,52 +635,57 @@ hr {
     padding: 0 20px;
     height: 10vh;
   }
-  
+
   aside {
     font-size: 32px;
+    margin-top: 15px;
   }
-  
+
   nav a {
     font-size: 24px;
   }
-  
+
   .sobre {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .sobre aside {
     width: 100%;
     text-align: center;
     padding: 0 40px;
     margin-bottom: 30px;
   }
-  
+
   .info {
     align-items: center;
     text-align: center;
     padding: 0 40px;
   }
-  
+
   .contatos {
     width: 70%;
     justify-content: center;
     gap: 20px;
   }
-  
-  .modal {
-    width: 300px;
-    height: 280px;
-    margin-left: 20px;
-  }
-  
-  .carrossel {
-    height: 550px;
-    min-width: 300px;
-  }
-  
+
   .frase {
-    width: 70%;
+    width: 75%;
+    padding: 0 20px;
+  }
+  .sobre aside {
+    padding: 0 10px;
+  }
+  .info h2{
+    font-size: 7vw;
+  }
+  .tecnologia {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 450px;
   }
 }
 
@@ -691,56 +696,49 @@ hr {
     height: auto;
     padding: 15px 0;
   }
-  
+
   header aside {
     margin-bottom: 15px;
     height: auto;
   }
-  
+
   nav {
     width: 100%;
-    flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
   }
-  
+
   nav a {
-    font-size: 20px;
+    font-size: 3.4vw;
     padding: 5px 10px;
   }
-  
-  section:first-of-type {
-    padding-top: 20vh;
+
+  section {
+    h1 {
+      text-align: center;
+    }
   }
-  
+
   .apresentacao {
     width: 90%;
     text-align: center;
   }
-  
+
   .tecnologia {
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-  }
-  
-  .modal {
-    margin-left: 0;
-    margin-top: 20px;
-  }
-  
-  .sliderContainer {
     justify-content: center;
   }
-  
+
   .cursos {
-    flex-direction: column;
-    align-items: center;
+    height: 60%;
+    width: 85%;
   }
-  
+
   .frase {
     width: 90%;
   }
-  
+
   footer p {
     text-align: center;
     padding: 0 20px;
@@ -748,72 +746,81 @@ hr {
 }
 
 /* celular */
-@media (max-width: 480px) {
+@media (max-width: 480px) and (min-width: 376px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+    backdrop-filter: blur(5px);
+  }
+
   header aside {
+    margin-bottom: 15px;
     font-size: 28px;
+    width: auto;
   }
-  
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+
   nav a {
-    font-size: 18px;
+    font-size: 16px;
+    padding: 5px 0;
   }
-  
-  h1 {
-    font-size: 36px;
+
+  .apresentacao {
+    width: 90%;
+    text-align: center;
   }
-  
-  h2 {
-    font-size: 28px;
+
+  .apresentacao h1 {
+    font-size: 9vw;
   }
-  
-  .info h1 {
-    font-size: 50px;
+
+  .apresentacao h2 {
+    font-size: 7vw;
   }
-  
-  .info p {
-    font-size: 20px;
-  }
-  
+
   .apresentacao button {
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px 20px;
   }
-  
-  .modal {
-    width: 280px;
-    height: 260px;
+
+
+  .info {
+    padding: 0 20px;
   }
-  
-  .carrossel {
-    height: 500px;
-    min-width: 280px;
+
+  .info h1 {
+    font-size: 42px;
   }
-  
-  .carrossel h1 {
-    font-size: 32px;
-  }
-  
-  .carrossel p {
+
+  .info p {
     font-size: 18px;
   }
-  
+
   .contatos {
     width: 100%;
+    justify-content: center;
+    gap: 15px;
   }
-  
-  .buttonContatos {
-    padding: 12px;
+
+  .carrossel {
+    height: 600px;
+    min-width: 85%;
   }
-  
-  .buttonContatos i {
-    font-size: 20px;
+
+  .frase {
+    width: 85%;
   }
-  
-  .frase h2, .nome {
+
+  .frase h2,
+  .nome {
     font-size: 1.5rem;
-  }
-  
-  footer p {
-    font-size: 16px;
   }
 }
 
@@ -822,25 +829,25 @@ hr {
   header aside {
     font-size: 24px;
   }
-  
+
   nav a {
     font-size: 16px;
   }
-  
+
   .modal {
     width: 260px;
     height: 240px;
   }
-  
+
   .carrossel {
     height: 480px;
     min-width: 260px;
   }
-  
+
   .apresentacao {
     height: auto;
   }
-  
+
   .apresentacao button {
     font-size: 18px;
   }
