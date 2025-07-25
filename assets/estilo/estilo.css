@@ -408,6 +408,7 @@ section.show {
     font-size: 40px;
   }
   p {
+    width: 85%;
     margin-top: 20px;
     height: 120px;
     font-size: 20px;
@@ -680,12 +681,23 @@ hr {
     font-size: 7vw;
   }
   .tecnologia {
-    display: block;
     display: flex;
-    flex-direction: column;
     align-items: center;
     height: auto;
-    width: 450px;
+    width: 100%;
+  }
+  .tech {
+    width: 40%;
+  }
+
+  .sobre aside img {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .carrossel {
+    height: 600px;
+    min-width: 35%;
   }
 }
 
@@ -724,8 +736,13 @@ hr {
     text-align: center;
   }
 
+  .sobre aside img {
+    width: 60%;
+    margin: 0 auto;
+  }
+
   .tecnologia {
-    width: 90%;
+    width: 80%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -733,11 +750,17 @@ hr {
   .tech {
     margin: auto;
     margin-top: 30px;
+    width: 80%;
+    height: 300px;
+    padding: 20px;
   }
 
   .cursos {
     height: 60%;
-    width: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .curso {
@@ -754,6 +777,11 @@ hr {
     text-align: center;
     padding: 0 20px;
     margin: auto;
+  }
+
+  .carrossel {
+    height: 600px;
+    min-width: 55%;
   }
 }
 
@@ -776,7 +804,7 @@ hr {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    padding: 0;
+    padding: 0 10px;
   }
 
   nav a {
@@ -841,6 +869,10 @@ hr {
   #habilidades h1{
     font-size: 10vw;
   }
+
+  .tech {
+    width: 100%;
+  }
 }
 
 /* celular pequeno */
@@ -869,5 +901,9 @@ hr {
 
   .apresentacao button {
     font-size: 18px;
+  }
+  .tech {
+    width: 80%;
+    height: 600px;
   }
 }
