@@ -725,9 +725,14 @@ hr {
   }
 
   .tecnologia {
+    width: 90%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+  }
+  .tech {
+    margin: auto;
+    margin-top: 30px;
   }
 
   .cursos {
@@ -735,13 +740,20 @@ hr {
     width: 85%;
   }
 
+  .curso {
+    margin: auto;
+    margin-top: 30px;
+  }
+
   .frase {
     width: 90%;
+    margin: 0 auto;
   }
 
   footer p {
     text-align: center;
     padding: 0 20px;
+    margin: auto;
   }
 }
 
@@ -796,11 +808,14 @@ hr {
   }
 
   .info h1 {
-    font-size: 42px;
+    font-size: 15vw;
+  }
+  .info h2 {
+    font-size: 8vw;
   }
 
   .info p {
-    font-size: 18px;
+    font-size: 4.5vw;
   }
 
   .contatos {
@@ -821,6 +836,10 @@ hr {
   .frase h2,
   .nome {
     font-size: 1.5rem;
+  }
+
+  #habilidades h1{
+    font-size: 10vw;
   }
 }
 
