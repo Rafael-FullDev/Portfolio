@@ -468,6 +468,7 @@ section.show {
 
 .cursos {
   display: flex;
+  flex-wrap: wrap;
   .modal {
     display: flex;
     justify-content: center;
@@ -626,4 +627,221 @@ hr {
 .buttonContatos:active {
   transform: translateY(-2px) scale(0.98);
   transition: all 0.2s ease;
+}
+
+/* tablete*/
+@media (max-width: 1024px) {
+  header {
+    padding: 0 20px;
+    height: 10vh;
+  }
+  
+  aside {
+    font-size: 32px;
+  }
+  
+  nav a {
+    font-size: 24px;
+  }
+  
+  .sobre {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sobre aside {
+    width: 100%;
+    text-align: center;
+    padding: 0 40px;
+    margin-bottom: 30px;
+  }
+  
+  .info {
+    align-items: center;
+    text-align: center;
+    padding: 0 40px;
+  }
+  
+  .contatos {
+    width: 70%;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .modal {
+    width: 300px;
+    height: 280px;
+    margin-left: 20px;
+  }
+  
+  .carrossel {
+    height: 550px;
+    min-width: 300px;
+  }
+  
+  .frase {
+    width: 70%;
+  }
+}
+
+/* tablete pequeno*/
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 0;
+  }
+  
+  header aside {
+    margin-bottom: 15px;
+    height: auto;
+  }
+  
+  nav {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  nav a {
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+  
+  section:first-of-type {
+    padding-top: 20vh;
+  }
+  
+  .apresentacao {
+    width: 90%;
+    text-align: center;
+  }
+  
+  .tecnologia {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .modal {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  
+  .sliderContainer {
+    justify-content: center;
+  }
+  
+  .cursos {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .frase {
+    width: 90%;
+  }
+  
+  footer p {
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+
+/* celular */
+@media (max-width: 480px) {
+  header aside {
+    font-size: 28px;
+  }
+  
+  nav a {
+    font-size: 18px;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  .info h1 {
+    font-size: 50px;
+  }
+  
+  .info p {
+    font-size: 20px;
+  }
+  
+  .apresentacao button {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+  
+  .modal {
+    width: 280px;
+    height: 260px;
+  }
+  
+  .carrossel {
+    height: 500px;
+    min-width: 280px;
+  }
+  
+  .carrossel h1 {
+    font-size: 32px;
+  }
+  
+  .carrossel p {
+    font-size: 18px;
+  }
+  
+  .contatos {
+    width: 100%;
+  }
+  
+  .buttonContatos {
+    padding: 12px;
+  }
+  
+  .buttonContatos i {
+    font-size: 20px;
+  }
+  
+  .frase h2, .nome {
+    font-size: 1.5rem;
+  }
+  
+  footer p {
+    font-size: 16px;
+  }
+}
+
+/* celular pequeno */
+@media (max-width: 360px) {
+  header aside {
+    font-size: 24px;
+  }
+  
+  nav a {
+    font-size: 16px;
+  }
+  
+  .modal {
+    width: 260px;
+    height: 240px;
+  }
+  
+  .carrossel {
+    height: 480px;
+    min-width: 260px;
+  }
+  
+  .apresentacao {
+    height: auto;
+  }
+  
+  .apresentacao button {
+    font-size: 18px;
+  }
 }
